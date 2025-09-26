@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gorillaz</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="p-5 bg-dark text-white">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/gorillaz-logo.png" alt="Logotipo da banda Gorillaz" class="nav-img" loading="lazy" width="160">
+      <ul class="nav mt-3">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+
+    <!-- Início -->
+    <section id="inicio" class="my-5 text-center">
+      <h1 class="display-4 fw-bold">Bem-vindos ao universo do <span class="text-danger">Gorillaz</span></h1>
+      <p class="lead">A primeira banda virtual do mundo, criada por Damon Albarn e Jamie Hewlett.</p>
+      <img src="img/gorillaz-band.jpg" alt="Imagem da banda virtual Gorillaz" class="img-fluid rounded-4 shadow mt-4" loading="lazy">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Quem são os Gorillaz?</h2>
+          <p>
+            Gorillaz é uma banda virtual britânica criada em 1998. Seus integrantes fictícios são 2-D, Murdoc Niccals,
+            Noodle e Russel Hobbs. Misturando rock alternativo, hip hop, música eletrônica e pop experimental, a banda
+            conquistou fãs no mundo todo com seu estilo único e seus clipes animados.
+          </p>
+          <p>
+            Entre seus maiores sucessos estão <em>Clint Eastwood</em>, <em>Feel Good Inc.</em> e <em>On Melancholy Hill</em>.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/gorillaz-characters.png" alt="Personagens virtuais da banda Gorillaz" class="img-fluid rounded-4 shadow" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="my-5">
+      <h2 class="text-center mb-4">Galeria</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="img/gorillaz-live.jpg" alt="Show ao vivo da banda Gorillaz" class="img-fluid rounded-4 shadow" loading="lazy">
+        </div>
+        <div class="col-md-4">
+          <img src="img/gorillaz-art.jpg" alt="Arte conceitual dos personagens Gorillaz" class="img-fluid rounded-4 shadow" loading="lazy">
+        </div>
+        <div class="col-md-4">
+          <img src="img/gorillaz-album.jpg" alt="Capa de álbum da banda Gorillaz" class="img-fluid rounded-4 shadow" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5">
+      <div class="container p-5 rounded-4 bg-light shadow">
+        <h2 class="mb-4 text-center">Entre em contato</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" class="form-control" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-danger btn-lg">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-4 bg-dark text-white">
+    <p class="mb-2">Siga o Gorillaz nas redes:</p>
+    <i class="bi bi-youtube mx-2"></i>
+    <i class="bi bi-spotify mx-2"></i>
+    <i class="bi bi-instagram mx-2"></i>
+    <i class="bi bi-twitter mx-2"></i>
+    <p class="mt-3">Site desenvolvido como projeto escolar para o professor Marcus.</p>
+  </footer>
+</body>
+
+</html>

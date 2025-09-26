@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root {
+  --preto: #0a0a0a;
+  --cinza-escuro: #1c1c1c;
+  --vermelho: #d62828;
+  --verde-neon: #9ef01a;
+  --branco: #f8f9fa;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cinza-escuro);
+  border-bottom: 4px solid var(--vermelho);
+}
+
+.nav-link {
+  color: var(--branco);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--verde-neon);
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  padding-bottom: 5rem;
+}
+
+/* Início */
+#inicio h1 {
+  font-family: 'Bangers', cursive;
+  text-transform: uppercase;
+  color: var(--verde-neon);
+  text-shadow: -3px 3px var(--vermelho);
+}
+
+#inicio p {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+/* Sobre */
+#sobre h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8rem;
+  color: var(--vermelho);
+}
+
+#sobre p {
+  color: #eee;
+}
+
+/* Galeria */
+#galeria {
+  background-color: var(--cinza-escuro);
+  padding: 3rem 0;
+  border-radius: 20px;
+}
+
+#galeria h2 {
+  font-family: 'Bangers', cursive;
+  color: var(--verde-neon);
+}
+
+#galeria img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+#galeria img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Contato */
+#contato {
+  background-color: var(--cinza-escuro);
+  padding: 4rem 0;
+  border-radius: 20px;
+}
+
+.formulario {
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(158, 240, 26, 0.4);
+}
+
+.formulario label {
+  font-weight: 600;
+}
+
+.formulario button {
+  background-color: var(--vermelho);
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover,
+.formulario button:focus {
+  background-color: var(--verde-neon);
+  color: var(--preto);
+}
+
+/* Campos de formulário */
+.form-control {
+  background-color: #222;
+  color: var(--branco);
+  border: 1px solid #444;
+}
+
+.form-control:focus {
+  border-color: var(--verde-neon);
+  box-shadow: 0 0 8px var(--verde-neon);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+  font-size: 0.9rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer i:hover,
+footer i:focus {
+  color: var(--verde-neon);
+}
